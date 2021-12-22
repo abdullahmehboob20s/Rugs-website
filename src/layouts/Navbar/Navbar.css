@@ -27,13 +27,19 @@
 .navbar-links {
   display: flex;
   align-items: center;
-  gap: 2rem;
 }
 
 .nav-social-links {
   display: flex;
   align-items: center;
-  gap: 1rem;
+}
+
+.navbar-links > :not(:last-child) {
+  margin-right: 2rem;
+}
+
+.nav-social-links > :first-child {
+  margin-right: 1rem;
 }
 
 .social-icon-link img {
@@ -55,11 +61,11 @@
   }
 }
 @media (max-width: 420px) {
-  .navbar-links {
-    gap: 1rem;
+  .navbar-links > :not(:last-child) {
+    margin-right: 1rem;
   }
 
-  .nav-social-links {
-    gap: 0.5rem;
+  .nav-social-links > :first-child {
+    margin-right: 0.5rem;
   }
 }

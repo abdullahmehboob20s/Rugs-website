@@ -2,7 +2,6 @@
   height: calc(100vh - 120px);
   display: flex;
   align-items: center;
-  gap: 100px;
 }
 
 .JustRags-left {
@@ -10,6 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+  margin-right: 100px;
 }
 
 .JustRags-left img {
@@ -57,7 +57,10 @@
   .JustRags {
     height: auto;
     padding: 30px 0;
-    gap: 50px;
+  }
+
+  .JustRags-left {
+    margin-right: 50px;
   }
 
   .just-rugs-img {
@@ -67,5 +70,10 @@
 @media (max-width: 700px) {
   .JustRags {
     flex-direction: column-reverse;
+  }
+
+  .JustRags-left {
+    margin-right: 0px;
+    margin-top: 50px;
   }
 }

@@ -1,10 +1,10 @@
 .team {
   display: flex;
   align-items: center;
-  gap: 100px;
 }
 .team-left {
   flex: 1;
+  margin-right: 100px;
 }
 .team-right {
   flex: 1;
@@ -18,8 +18,8 @@
 }
 
 @media (max-width: 1000px) {
-  .team {
-    gap: 50px;
+  .team-left {
+    margin-right: 50px;
   }
 
   .team-right img {
@@ -28,10 +28,11 @@
 }
 @media (max-width: 900px) {
   .team {
-    gap: 30px;
+    flex-direction: column-reverse;
   }
 
-  .team {
-    flex-direction: column-reverse;
+  .team-left {
+    margin-right: 0px;
+    margin-top: 30px;
   }
 }

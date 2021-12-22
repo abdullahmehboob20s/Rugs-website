@@ -1,0 +1,37 @@
+.team {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.team-left {
+  flex: 1;
+}
+.team-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-right img {
+  width: 350px;
+}
+
+@media (max-width: 1000px) {
+  .team {
+    gap: 50px;
+  }
+
+  .team-right img {
+    width: 250px;
+  }
+}
+@media (max-width: 900px) {
+  .team {
+    gap: 30px;
+  }
+
+  .team {
+    flex-direction: column-reverse;
+  }
+}
